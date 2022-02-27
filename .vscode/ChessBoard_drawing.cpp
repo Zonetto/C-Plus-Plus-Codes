@@ -19,6 +19,7 @@ void square(int c, bool check = false) {
 }
 void Print(int row, int column) {
     bool check = false;
+    
     for (int i = 0; i < column; i++) {
         square(row, check);
         if (check == false)
