@@ -110,12 +110,9 @@ int main() {
     LinkesList List;
     List.Append(5);
     List.Append(8);
-    List.Append(4);
-    List.Append(3);
     List.Append(18);
     List.Display();
     cout << "\n";
-    List.revers();
     List.Display();
     return 0;
 }
