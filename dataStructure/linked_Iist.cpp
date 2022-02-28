@@ -6,14 +6,16 @@ class LinkesList {
     struct Node {
         int date;
         Node* next;
+        Node(int item) {
+            this->date = item;
+            this->next = nullptr;
+        }
     };
     Node* head = NULL;
 
    public:
     void Append(int item) {
-        Node* Newnode = new Node;
-        Newnode->date = item;
-        Newnode->next = NULL;
+        Node* Newnode = new Node(item);
         if (head == NULL)
             head = Newnode;
         else {
@@ -24,9 +26,9 @@ class LinkesList {
             temp->next = Newnode;
         }
     }
-    void insert_Pos(int vel, int pos) {
-        Node* newNode = new Node;
-        newNode->date = vel;
+    void insert_Pos(int item, int pos) {
+        Node* newNode = new Node(item);
+        newNode->date = item;
         newNode->next = NULL;
         if (pos == 0) {
             newNode->next = head;
