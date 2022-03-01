@@ -56,7 +56,6 @@ int main()
 	system("pause");
 	return 0;
 }
-------------------------------------------------------------------------------------------
 //postfix
 float math(float o1, float o2, char opr){
 if (opr=='+')

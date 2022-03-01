@@ -28,8 +28,6 @@ class LinkesList {
     }
     void insert_Pos(int item, int pos) {
         Node* newNode = new Node(item);
-        newNode->date = item;
-        newNode->next = NULL;
         if (pos == 0) {
             newNode->next = head;
             head = newNode;
@@ -105,6 +103,16 @@ class LinkesList {
         }
         head = prev;
     }
+    // void Delete() {
+    //     Node* temp = head;
+    //     while (temp != nullptr) {
+            
+    //         temp = temp->next;
+       
+    //     }
+
+    //     temp->next;
+    // }
 };
 int main() {
     LinkesList List;
@@ -113,6 +121,9 @@ int main() {
     List.Append(18);
     List.Display();
     cout << "\n";
+    List.insert_Pos(6, 0);
+    List.insert_Pos(10, 2);
+    List.insert_Pos(6, 4);
     List.Display();
     return 0;
 }
