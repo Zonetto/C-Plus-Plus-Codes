@@ -26,6 +26,11 @@ class LinkesList {
             temp->next = Newnode;
         }
     }
+    void insert_firstNode(int val) {  // homework unv
+        Node* newNode = new Node(val);
+        newNode->next = head;
+        head = newNode;
+    }
     void insert_Pos(int item, int pos) {
         Node* newNode = new Node(item);
         if (pos == 0) {
@@ -106,9 +111,9 @@ class LinkesList {
     // void Delete() {
     //     Node* temp = head;
     //     while (temp != nullptr) {
-            
+
     //         temp = temp->next;
-       
+
     //     }
 
     //     temp->next;
