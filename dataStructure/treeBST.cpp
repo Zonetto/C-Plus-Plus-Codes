@@ -8,7 +8,7 @@ Node* Right;
 Node* Left;
 Node (int vel){
 data = vel;
-Right = Left = nullptr
+Right = Left = nullptr;
 }
 };
 private:

@@ -108,16 +108,6 @@ class LinkesList {
         }
         head = prev;
     }
-    // void Delete() {
-    //     Node* temp = head;
-    //     while (temp != nullptr) {
-
-    //         temp = temp->next;
-
-    //     }
-
-    //     temp->next;
-    // }
 };
 int main() {
     LinkesList List;
