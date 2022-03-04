@@ -2,7 +2,6 @@
 #include <ctime>
 #include <iostream>
 #include <string>
-
 const int len = 5;
 int readLength() {
     int len = 0;
