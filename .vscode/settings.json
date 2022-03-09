@@ -4,6 +4,7 @@
     "files.associations": {
         "iostream": "cpp"
     },
-    
-
+    // "code-runner.executorMap": {
+    // "cpp": "g++ $fullFileName -o $fileNameWithoutExt.exe && start $fileNameWithoutExt.exe",    
+    // },
 }
