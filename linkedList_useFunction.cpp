@@ -47,36 +47,46 @@ void disPlay() {
         temp = temp->next;
     }
 }
-void count_Node(){
+void count_Node() {
     Node* temp = head;
     int co = 0;
-    while (temp != nullptr)
-    {
+    while (temp != nullptr) {
         co++;
         temp = temp->next;
     }
     cout << co;
 }
-void searchElement(int target){
+void searchElement(int target) {
     Node* temp = head;
-    while (temp->data != target && temp->next != nullptr){
+    while (temp->data != target && temp->next != nullptr) {
         temp = temp->next;
     }
     if (temp->data == target)
         cout << "Yes";
-        else
-            return exit(-1);
+    else
+        return exit(-1);
 }
-void search_NodePos(){
-    
+void search_Node(int pos) {
+    if (head == nullptr)
+        return exit(-1);
+    int index = 0;
+    Node* temp = head;
+    while (temp != nullptr) {
+        temp = temp->next;
+    }
+    if (temp->data == pos)
+        cout << index;
+    else
+        index++;
+
+    cout << index;
 }
 int main() {
     Append(5);
     Append(4);
     Append(3);
-    disPlay();
     insert_Pos(6, 0);
     disPlay();
     cout << "\n";
-    searchElement(4);
+    search_Node(1);
 }
