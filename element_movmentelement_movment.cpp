@@ -2,6 +2,7 @@
 #include <ctime>
 #include <iostream>
 #include <string>
+using namespace std;
 const int len = 5;
 int readLength() {
     int len = 0;
@@ -98,3 +99,4 @@ int main() {
     }
 
     return 0;
+}
