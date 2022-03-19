@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  {
 //     "C_Cpp.errorSquiggles": "Enabled",
 //     "C_Cpp.configurationWarnings": "Enabled",
@@ -49,4 +50,15 @@
 //         "streambuf": "cpp",
 //         "typeinfo": "cpp"
 //     },
+=======
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.configurationWarnings": "Enabled",
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    // "code-runner.executorMap": {
+    // "cpp": "g++ $fullFileName -o $fileNameWithoutExt.exe && start $fileNameWithoutExt.exe",    
+    // },
+>>>>>>> 35438e140359cbf38d2ca53cfc4d99744bb21131
 }
