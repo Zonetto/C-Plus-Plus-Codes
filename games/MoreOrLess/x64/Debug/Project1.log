@@ -1,6 +1,0 @@
-﻿  MoreOrLess.cpp
-  main.cpp
-C:\Users\smart way\source\repos\Project1\MoreOrLess\main.cpp(3,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
-  LINK : C:\Users\smart way\source\repos\Project1\MoreOrLess\x64\Debug\Project1.exe not found or not built by the last incremental link; performing full link
-  Project1.vcxproj -> C:\Users\smart way\source\repos\Project1\MoreOrLess\x64\Debug\Project1.exe
