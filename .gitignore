@@ -32,3 +32,15 @@
 *.out
 *.app
 *.json
+# New
+*.pdb
+*.idb
+*.ilk
+*.log
+*.vcxproj
+*.vcxproj.user
+*.obj
+*.suo
+*.db
+*.tlog
+*.
