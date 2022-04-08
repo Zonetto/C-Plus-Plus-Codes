@@ -81,6 +81,53 @@ void search_Node(int pos) {
 
     cout << index;
 }
+void insertAfterNode(int item){
+    Node* newNode = new Node(item);
+    if (head == nullptr)
+        cout << "N";
+    else{
+        Node* temp = head;
+        while ((temp->data != item) && (temp->next != nullptr))
+        {
+            /* code */
+        }
+        if (temp->data == item){
+            newNode->next = temp->next;
+        temp->next = newNode;
+        }
+        else
+            exit(0);
+    }
+
+}
+void InsertMiddleNode(int item) { //eror
+    if (head == nullptr)
+        return;
+    Node* newNode = new Node(item);
+    Node* temp = head;
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+void InsertMiddleNode_t(int item, int count) {
+    if (head == nullptr)
+        return;
+    Node* temp = head;
+    Node* newNode = new Node(item);
+    int mod = (count / 2);
+    for (int i = 0; i < mod - 1 && temp->next != nullptr; i++) {
+       temp = temp->next;
+    }
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+void deletaNode(){
+while (head != nullptr)
+{
+    delete (head);
+    head = head->next;
+}
+
+}
 int main() {
     Append(5);
     Append(4);
