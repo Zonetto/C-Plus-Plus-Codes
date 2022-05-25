@@ -1,21 +1,23 @@
 #include <iostream>
 using namespace std;
-const int size = 10;
-int binarySearch(int arr[], int value) {
-    int low = 0;
-    int high = size - 1;
+const int SIZE = 10;
+void binarySearch(int arr[], int value) {
+    int low = 0, counter = 0;
+    int high = SIZE - 1;
     while (low <= high) {
+        // cout <<  counter++;
         int mid = (low + high) / 2;
-        if (arr[mid] == value)
-            return mid + 1;
-        else if (arr[mid] < value)
+        if (arr[mid] == value) {
+            cout << mid + 1 << '\n';
+            break;
+        } else if (arr[mid] < value)
             low = mid + 1;
         else
             high = mid - 1;
     }
-    return -1;
+    return exit(0);
 }
 int main() {
-    int arr[size] = {33, 55, 10, 44, 90};
-    cout << binarySearch(arr, 55);
+    int arr[SIZE] = {33, 55, 10, 44, 90};
+    binarySearch(arr, 90);
 }

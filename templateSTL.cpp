@@ -5,9 +5,9 @@ class Temp {
    private:
     int age;
     Cl phone;
-   public:
-   void sort (cl a, b){}
 
+   public:
+    void sort(Cl a, b) {}
 };
 template <typename T>
 void Template(T a, T b) {
