@@ -51,8 +51,10 @@ string infix_to_postfix(string exp){
 
 int main()
 {
-	string infixExpression = ("(3+2)+7/2*((7+3)*2)");
-	cout << infix_to_postfix(infixExpression) << endl;
+	//string infixExpression = ("(3+2)+7/2*((7+3)*2)");
+        string infixExpression = ("(x/6+(a-2*(b/3)^5+f)^2)");
+
+        cout << infix_to_postfix(infixExpression) << endl;
 	system("pause");
 	return 0;
 }
@@ -83,10 +85,4 @@ stk.push(res);
 }
 }
 return stk.top();
-}
-int main()
-{
-	string infixExpression = ("382/+5-");
-	cout << pp(infixExpression) << endl;
-
 }

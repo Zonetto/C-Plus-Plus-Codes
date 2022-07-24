@@ -1,18 +1,22 @@
+#include <cstring>
 #include <iostream>
 using namespace std;
-struct student {
-    int id;
-    string firstName;
-    char lastName[10];
+class T{
+    private:
+    int *x, *y;
+    public:
+    void Print(){
+        cout << (*x * *y);
+    }
+    void Enter(int*, int*);
 };
+void T::Enter(int *x, int *y){
+    this->x = x;
+    this->y = y;
+}
 int main() {
-    char a[5];
-    student st1;  //, *pi;
-    st1.firstName = "ahhh";
-    // st1.lastName[0] = 'ali';
-    st1.id = 1;
-    // pi->firstName[0] = 'a';
-    // pi->id = 123;
-    // cout << pi->firstName[0] << " " << pi->id <<'\n';
-    cout << st1.firstName << " " << st1.id;
+    T t;
+    int x = 5, y = 10;
+    t.Enter(&x, &y);
+    t.Print();
 }
